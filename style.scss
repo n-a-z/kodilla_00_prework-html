@@ -1,0 +1,167 @@
+/* Global */
+
+$color-main: #ff5e57;
+$font-text: "Roboto", sans-serif;
+$font-header: "Nerko One", cursive;
+
+.section-title {
+  position: relative;
+  font-size: 36px;
+  margin: 0 0 60px 0;
+  font-family: $font-header
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 50%;
+  width: 50px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $color-main;
+  border-radius: 50%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-text
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 108px 0;
+}
+
+/* Splash */
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://i.postimg.cc/Jn81bxjC/pexels-kaboompics-com-6267.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash i {
+  font-size: 30px;
+  background: $color-main;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+
+.page-title {
+  color: #fff;
+  font-size: 60px;
+  margin: 48px 0 0 0;
+  position: relative;
+  font-family: $font-header
+}
+
+.page-title::after {
+  position: absolute;
+  content: "";
+  bottom: -24px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translateX(-50%);
+  background: $color-main;
+  border-radius: 50%;
+}
+
+.page-subtitle {
+  margin: 48px 0 0 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Intro */
+.intro {
+  background: #fff;
+}
+
+.intro p {
+  width: 70%;
+  margin: 0 auto;
+  padding: 48px 0;
+  font-size: 24px;
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+}
+
+/* About */
+.about {
+  background: #f0f0f0;
+}
+
+/* Skills */
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  position: relative;
+}
+
+.skill-image {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skill-img img {
+  object-fit: contain;
+  transition: all 1s;
+}
+
+.skill-img img:hover {
+  transform: scale(20);
+}
+
+.skill.right .skill-image {
+  right: 0;
+}
+
+.skill.right .skill-description {
+  padding: 36px 55% 36px 0;
+}
+
+.skill.left .skill-description {
+  padding: 36px 0 36px 36%;
+}
+
+/* Footer */
+.page-footer {
+  background: #242424;
+  color: #fff;
+}
